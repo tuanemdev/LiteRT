@@ -7,7 +7,7 @@ public final class CoreMLDelegate: Delegate {
     /// The configuration options for the `CoreMLDelegate`.
     public let options: Options
     
-    // Conformance to the `Delegate` protocol.
+    /// Conformance to the `Delegate` protocol.
     public private(set) var cDelegate: CDelegate
     
     /// Creates a new instance configured with the given `options`. Returns `nil` if the underlying

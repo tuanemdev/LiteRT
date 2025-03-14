@@ -19,6 +19,7 @@ let package = Package(
             dependencies: [
                 "TensorFlowLiteC",
                 "TensorFlowLiteCCoreML",
+                "TensorFlowLiteCMetal",
             ]
         ),
         .binaryTarget(
@@ -30,6 +31,11 @@ let package = Package(
             name: "TensorFlowLiteCCoreML",
             url: "https://github.com/tuanemdev/LiteRT/releases/download/XCFramework/TensorFlowLiteCCoreML.xcframework.zip",
             checksum: "675a18a3e2186ac7eae37ee0975810a8b7c9c6523035a9379882f173707b7534"
+        ),
+        .binaryTarget(
+            name: "TensorFlowLiteCMetal",
+            url: "https://github.com/tuanemdev/LiteRT/releases/download/XCFramework/TensorFlowLiteCMetal.xcframework.zip",
+            checksum: "6461fb4e0194ad7ef34bd704fd94753e05a776293906abcbc24b02489a74d272"
         ),
         .testTarget(
             name: "LiteRTTests",
